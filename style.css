@@ -43,7 +43,7 @@ img {
 /* código omitido */
 
 /* Responsividade */
-@media (max-width: 768px) {
+@media (max-width: 150px) {
     .conteudo {
         width: 90%;
     }
