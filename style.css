@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&family=Rakkas&display=swap');
+import url('https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&family=Rakkas&display=swap');
 
-/* Variáveis */
 :root {
     --primary-color: #026773;
     --secondary-color: #3CA6A6;
@@ -11,9 +10,6 @@
     --font-titulo: "Rakkas", serif;
 }
 
-/* código omitido */
-
-/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -21,11 +17,67 @@
     font-family: var(--font-body);
 }
 
-/* Corpo da página */
 body {
     background-color: var(--background-color);
     color: var(--text-color);
     line-height: 1.6;
+}
+
+header.area-verde {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 30px 15px;
+    text-align: center;
+}
+
+header.area-verde h1 {
+    font-family: var(--font-titulo);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.imagem-centralizada {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+header p {
+    margin: 15px auto;
+    max-width: 800px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main .conteudo {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffffb2;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-family: var(--font-titulo);
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 h3 {
@@ -37,28 +89,49 @@ p {
 }
 
 img {
-    max-width: 90%;
+    max-width: 100%;
+    height: auto;
 }
 
-/* código omitido */
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
 
-/* Responsividade */
+.cta-button:hover {
+    background-color: var(--button-hover);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.cta-footer {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: underline;
+}
+
 @media (max-width: 768px) {
-    .conteudo {
-        width: 90%;
+    .imagem-centralizada {
+        max-width: 90%;
     }
 
     nav ul {
-        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    nav ul li {
-        margin: 5px 0;
+    .conteudo {
+        padding: 20px 10px;
     }
-
-    .cta-button {
-        width: 100%;
     }
-}
