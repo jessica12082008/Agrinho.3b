@@ -25,7 +25,7 @@ body {
 
 header.area-verde {
     background-color: var(--primary-color);
-    color: rgb(163, 59, 59);
+    color: rgb(147, 224, 140);
     padding: 30px 15px;
     text-align: center;
 }
@@ -68,7 +68,7 @@ main .conteudo {
     padding: 40px 20px;
     max-width: 900px;
     margin: 0 auto;
-    background-color: #306930b2;
+    background-color: #93d493b2;
     border-radius: 10px;
     margin-bottom: 40px;
 }
